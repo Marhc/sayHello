@@ -1,0 +1,1 @@
+"use strict";module.exports=a=>console.log("Hello, "+(a||"World"));
