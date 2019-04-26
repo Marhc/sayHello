@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "rimraf './dev/**/*' && ./node_modules/.bin/cross-env BABEL_ENV=transpile ./node_modules/.bin/babel src --out-dir dev",
-    "minify": "rimraf './dist/**/*' && ./node_modules/.bin/cross-env BABEL_ENV=minify ./node_modules/.bin/babel dev --out-dir dist",
+    "transpile": "rimraf './dev/**/*' && npx cross-env BABEL_ENV=transpile npx babel src --out-dir dev",
+    "minify": "rimraf './dist/**/*' && npx cross-env BABEL_ENV=minify npx babel dev --out-dir dist",
     "build": "npm run transpile && npm run minify"
   },
   "repository": {
